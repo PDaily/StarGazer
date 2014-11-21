@@ -1,3 +1,5 @@
+[ ![Codeship Status for PDaily/StarGazer](https://codeship.com/projects/5b471250-53fa-0132-107b-42ab35009c21/status)](https://codeship.com/projects/49079)
+
 # StarGazer
 
 This is the base for my own [Jekyll] based personal page. I was looking for a way to quickly get my assets in line while easily knocking down those pesky pagespeed warnings.

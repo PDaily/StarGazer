@@ -1,0 +1,7 @@
+.idea
+.codio
+.jekyll-assets-cache
+.sass-cache
+.pygments-cache
+/node_modules/
+/deploy/

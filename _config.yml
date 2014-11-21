@@ -1,0 +1,41 @@
+# Directory Settings
+source: src
+destination: deploy
+plugins: plugins
+
+# Site settings
+title: StarGazer
+subtitle: blub.
+author: bloop.
+email: example@example.com
+description:
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "example.com" # the base hostname & protocol for your site
+twitter_username:
+github_username:  
+
+# Dev settings, comment this out before pushing!
+host: 0.0.0.0
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+highlighter: pygments
+
+# ----------------------- #
+#   Jekyll-Assets Config  #
+# ----------------------- #
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/fonts
+    - _assets/images
+    - _assets/js
+    - _assets/scss
+  js_compressor:  uglifier
+  css_compressor: sass
+  cachebust: hard
+  cache: ../.jekyll-assets-cache
+  gzip: [ text/css, application/javascript ]
+  version: 1

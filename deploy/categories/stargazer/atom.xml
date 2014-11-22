@@ -11,10 +11,12 @@
     
       <item>
         <title>Welcome to StarGazer!</title>
-        <description>&lt;p&gt;Thanks for checking out StarGazer! This is a work in progress blogging platform based on the works of imathis over at &lt;a href=&quot;http://octopress.org&quot;&gt;Octopress&lt;/a&gt;. It is designed to be quick to develop within, and aims to be light-wieght and responsive.&lt;/p&gt;
+        <description>Thanks for checking out StarGazer! This is a work in progress blogging platform based on the works of imathis over at [Octopress]. It is designed to be quick to develop within, and aims to be light-wieght and responsive.
 
-&lt;p&gt;You can host this on a &lt;a href=&quot;http:github.com&quot;&gt;Github&lt;/a&gt; subdomain: &lt;code&gt;username.github.io&lt;/code&gt; for easy deployment, but StarGazer offers you the ability to host elsewhere. Be it your own machine or Heroku, StarGazer has you covered!&lt;/p&gt;
+You can host this on a [Github] subdomain: `username.github.io` for easy deployment, but StarGazer offers you the ability to host elsewhere. Be it your own machine or Heroku, StarGazer has you covered!
 
+[octopress]:http://octopress.org
+[github]:http:github.com
 </description>
         <pubDate>Wed, 26 Nov 2014 00:11:14 +0000</pubDate>
         <link>stargazer.pdaily.me/2014/11/26/welcome-to-stargazer/</link>

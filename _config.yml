@@ -38,4 +38,4 @@ assets:
   cachebust: hard
   cache: ../.jekyll-assets-cache
   gzip: [ text/css, application/javascript ]
-  version: 1
+  version: 2

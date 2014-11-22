@@ -4,3 +4,4 @@
 .sass-cache
 .pygments-cache
 /node_modules/
+/deploy/

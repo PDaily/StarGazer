@@ -3,10 +3,10 @@
   <channel>
     <title>StarGazer</title>
     <description></description>
-    <link>example.com/</link>
-    <atom:link href="example.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 21 Nov 2014 01:28:37 +0000</pubDate>
-    <lastBuildDate>Fri, 21 Nov 2014 01:28:37 +0000</lastBuildDate>
+    <link>stargazer.pdaily.me/</link>
+    <atom:link href="stargazer.pdaily.me/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 22 Nov 2014 00:13:52 +0000</pubDate>
+    <lastBuildDate>Sat, 22 Nov 2014 00:13:52 +0000</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
     
       <item>
@@ -27,8 +27,8 @@
 
 </description>
         <pubDate>Thu, 06 Nov 2014 00:11:14 +0000</pubDate>
-        <link>example.com/2014/11/06/welcome-to-stargazer/</link>
-        <guid isPermaLink="true">example.com/2014/11/06/welcome-to-stargazer/</guid>
+        <link>stargazer.pdaily.me/2014/11/06/welcome-to-stargazer/</link>
+        <guid isPermaLink="true">stargazer.pdaily.me/2014/11/06/welcome-to-stargazer/</guid>
         
         
         <category>jekyll</category>

@@ -274,7 +274,7 @@ end
 task :test do
   puts "Running tests with HTML Proofer..."
   system "bundle exec jekyll build"
-  HTML::Proofer.new("./deploy").run
+  HTML::Proofer.new("./deploy", { href_ignore: ["#"], disable_external: true, ext: ".html", directory_index_file: "index.html"}).run
 end
 
 desc "list tasks"

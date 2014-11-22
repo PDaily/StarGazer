@@ -7,11 +7,10 @@ plugins: plugins
 title: StarGazer
 subtitle: blub.
 author: bloop.
-email: example@example.com
+email: pat@pdaily.me
 description:
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "example.com" # the base hostname & protocol for your site
-twitter_user:
+url: "stargazer.pdaily.me" # the base hostname & protocol for your site
+twitter_username:
 
 # Github stuffs
 github_user: 
@@ -36,7 +35,7 @@ disqus_show_comment_count: false
 google_analytics_tracking_id:
 
 # Dev settings, comment this out before pushing!
-host: 0.0.0.0
+# host: 0.0.0.0
 
 # Build settings
 markdown: kramdown

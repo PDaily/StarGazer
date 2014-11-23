@@ -16,7 +16,7 @@ deploy_dir      = "deploy"   # deploy directory (for Github pages deployment)
 posts_dir       = "_posts"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
-
+server_port     = 4000
 task :build do
   puts "Compiling assets.."
   system 'bundle exec jekyll build'

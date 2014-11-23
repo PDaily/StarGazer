@@ -4,15 +4,47 @@ require 'sinatra/base'
 # The project root directory
 $root = ::File.dirname(__FILE__)
 
+case ENV['APP_NAME']
+  when 'production'
+    $env = 'prod'
+  when 'dev-damon'
+    $env = 'dev'
+  else
+    $env = 'local'
+end
+
+module Rack
+  class DeflaterWithExclusions < Deflater
+    def initialize(app, options = {})
+      @app = app
+      @exclude = options[:exclude]
+    end
+    def call(env)
+      if @exclude && @exclude.call(env)
+        @app.call(env)
+      else
+        super(env)
+      end
+    end
+  end
+end
+
 class StarGazerServer < Sinatra::Base
   disable :static
   
+  # gzip everything, except files with extensions below (images)
+  use Rack::DeflaterWithExclusions, :exclude => proc { |env|
+    [ ".jpg", ".png", ".ico" ].include? File.extname(env['PATH_INFO'])
+  }
+    
   # 60 min expiry for most things except anything in assets (which have md5'ed filenames)
   before do
-    expires 3600, :public, :must_revalidate
-    unless request.path_info[1].nil?
-      if request.path_info.split('/')[1].include? 'assets'
-        expires 21120000, :public, :must_revalidate
+    if $env != 'dev'
+      expires 3600, :public, :must_revalidate
+      unless request.path_info[1].nil?
+        if request.path_info.split('/')[1].include? 'assets'
+          expires 21120000, :public, :must_revalidate
+        end
       end
     end
   end

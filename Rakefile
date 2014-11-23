@@ -38,7 +38,7 @@ end
 
 desc "Run the site locally with Sinatra"
 task :preview do
-  jekyllPid = Process.spawn({"STARGAZER_ENV"=>"preview"}, "bundle exec jekyll serve")
+  jekyllPid = Process.spawn({"STARGAZER_ENV"=>"preview"}, "bundle exec jekyll build --watch")
   rackupPid = Process.spawn("bundle exec rackup --port #{server_port}")
   trap("INT") {
     [jekyllPid, rackupPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }

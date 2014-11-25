@@ -51,6 +51,8 @@ end
 desc "Run the site locally with Unicorn"
 task :run do
   jekyllPid = Process.spawn("bundle exec jekyll build --watch")
+  # Kinda hackish, but jekyll needs to build first in case the 'deploy' folder doesnt exist.
+  #sleep 8
   foremanPid = Process.spawn("foreman start -f=Procfile_local")
   
    trap("INT") {

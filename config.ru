@@ -7,7 +7,7 @@ $root = ::File.dirname(__FILE__)
 case ENV['APP_NAME']
   when 'production'
     $env = 'prod'
-  when 'dev-damon'
+when 'development'
     $env = 'dev'
   else
     $env = 'local'

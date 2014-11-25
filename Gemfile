@@ -9,20 +9,15 @@ group :development do
   gem 'jekyll-haml', '~> 0.1.1'
   gem 'sass-globbing', '~> 1.1.1'
   gem 'uglifier'
-<<<<<<< HEAD
-  gem 'sass', '~> 3.3.0'
-  gem 'compass', '~> 1.0'
-=======
   gem 'sass', '~> 3.3.14'
   gem 'compass', '~> 1.0.1'
->>>>>>> master
   gem 'jekyll-geo-pattern', '~> 0.4.1'
   gem 'haml', '~> 4.0.5'
   gem 'html-proofer', '~> 1.4.0'
   gem 'stringex'
   gem 'foreman'
   gem 'font-awesome-sass'
-  
+
   group :rails_assets do
     gem 'rails-assets-jquery'
     gem 'rails-assets-modernizr'

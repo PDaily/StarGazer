@@ -17,7 +17,7 @@ Stargazer includes:
 I was originally using [Octopress], but decided to work from scratch. I do think however, I may pull some things from [Octopress] to make my life easier.
 
 ###Version
-0.0.1
+0.0.2
 
 ### Installation
 

@@ -68,7 +68,11 @@
 // $base-line-height: 150%;
 
 // We use this to control whether or not CSS classes come through in the gem files.
-$include-html-classes: true;
+$include-html-classes: false;
+$include-html-top-bar-classes: true;
+$include-html-grid-classes: true;
+$include-html-buttons-classes: true;
+$include-html-type-classes:true;
 // $include-print-styles: true;
 $include-html-global-classes: $include-html-classes;
 

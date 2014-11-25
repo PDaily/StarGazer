@@ -17,10 +17,7 @@
   
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link href="{{ root_url }}/favicon.png" rel="icon">
-
-    {% stylesheet app %}
     <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
-    {% javascript vendor %}
-    {% javascript app %}
+    {% stylesheet app %}  
     {% include google_analytics.html %}
 </head>

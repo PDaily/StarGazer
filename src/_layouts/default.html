@@ -8,12 +8,6 @@
 
   <body>
 
-    <script>
-      $(document).ready(function(){
-        $(document).foundation();
-      });
-    </script>
-
     {% include header.html %}
 
     <div class="page-content">
@@ -23,7 +17,12 @@
     </div>
 
     {% include footer.html %}
-
+    {% javascript vendor %}
+    <script>
+      $(document).ready(function(){
+        $(document).foundation();
+      });
+    </script>
   </body>
-
+  
 </html>

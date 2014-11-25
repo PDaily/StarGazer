@@ -21,7 +21,7 @@ group :development do
   group :rails_assets do
     gem 'rails-assets-jquery'
     gem 'rails-assets-modernizr'
-    gem 'rails-assets-foundation'
+    gem 'rails-assets-foundation-ra'
   end
 end
 

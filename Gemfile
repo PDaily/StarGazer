@@ -17,7 +17,7 @@ group :development do
   gem 'stringex'
   gem 'foreman'
   gem 'font-awesome-sass'
-
+  
   group :rails_assets do
     gem 'rails-assets-jquery'
     gem 'rails-assets-modernizr-ra'

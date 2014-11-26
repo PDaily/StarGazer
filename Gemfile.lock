@@ -114,7 +114,8 @@ GEM
       rack
     rails-assets-foundation-ra (5.4.7)
     rails-assets-jquery (2.1.1)
-    rails-assets-modernizr (2.8.3)
+    rails-assets-modernizr-ra (2.8.3)
+    rails-assets-normalize-scss (3.0.2)
     raindrops (0.13.0)
     rake (10.3.2)
     rb-fsevent (0.9.4)
@@ -174,7 +175,8 @@ DEPENDENCIES
   jekyll-sitemap (~> 0.6.1)
   rails-assets-foundation-ra
   rails-assets-jquery
-  rails-assets-modernizr
+  rails-assets-modernizr-ra
+  rails-assets-normalize-scss
   rake (~> 10.3.2)
   sass (~> 3.3.14)
   sass-globbing (~> 1.1.1)

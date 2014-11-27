@@ -20,8 +20,9 @@ group :development do
 
   group :rails_assets do
     gem 'rails-assets-jquery'
-    gem 'rails-assets-modernizr'
+    gem 'rails-assets-modernizr-ra'
     gem 'rails-assets-foundation-ra'
+    gem 'rails-assets-normalize-scss'
   end
 end
 

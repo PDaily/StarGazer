@@ -11,9 +11,13 @@ email: pat@pdaily.me
 description:
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "stargazer.pdaily.me" # the base hostname & protocol for your site
-twitter_username:
-github_username:  
+twitter_user:
 
+# Github stuffs
+github_user: github
+github_repo_count: 2
+github_show_profile_link: true
+github_skip_forks: true
 # Dev settings, comment this out before pushing!
 # host: 0.0.0.0
 

@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
-<<<<<<< HEAD
-@import "compass";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-//@import "foundation-ra";
-@import "foundation-custom";
-=======
 @import "project-setup";
+@import "normalize-scss";
 //@import "foundation-ra";
->>>>>>> master
-@import "settings";
+@import "base/base";
+@import "base/colors";
 @import "foundation-custom";
 @import "compass";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+// Include main index
+@import "index";
+// Includes & Layouts
+@import "includes/includes";
+@import "layouts/layouts";

@@ -1,0 +1,41 @@
+@import "colors";
+@import "compass/css3";
+// Reference settings.scss for all the options
+// Foundation has to offer!
+
+
+$include-html-classes: true;
+$include-html-global-classes: $include-html-classes;
+
+// We use these to define default font weights
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+
+// Main site options. Make changes here and they'll change sitewide.
+.inline-bl {
+  display: inline-block;
+}
+
+.label {
+  margin: -0.5;
+  padding: 0.20rem 0.3rem;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+}
+
+.fa-tag {
+  background-color: $sun-flower;
+  display: inline;
+  margin: 0.5px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 1px 0.5px 0px 1px rgba(148,135,81,0.9);
+  -moz-box-shadow: 1px 0.5px 0px 1px rgba(148,135,81,0.9);
+  box-shadow: 1px 0.5px 0px 0.1px rgba(148,135,81,0.9);
+}

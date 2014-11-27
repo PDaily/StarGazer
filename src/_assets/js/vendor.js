@@ -1,3 +1,3 @@
 //= require jquery
-//= require modernizr
+//= require modernizr-ra
 //= require foundation-ra

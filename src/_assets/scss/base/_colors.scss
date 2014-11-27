@@ -1,0 +1,65 @@
+// Defaults from Foundation
+//
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
+
+// Flat color palette: http://codepen.io/cobblucas/pen/iGpIf
+$green-sea    : #16A085;
+$emerald      : #2ECC71;
+$nephritis    : #27AE60;
+$peter-river  : #3498DB;
+$belize-hole  : #2980B9;
+$amethyst     : #9B59B6;
+$wisteria     : #8E44AD;
+$wet-asphalt  : #34495E;
+$midnight-blue: #2C3E50;
+$night-shade  : #2C3E50;
+$sun-flower   : #F1C40F;
+$orange       : #F39C12;
+$carrot       : #E67E22;
+$pumpkin      : #D35400;
+$alizarin     : #E74C3C;
+$pomegranate  : #C0392B;
+$clouds       : #ECF0F1;
+$silvery      : #BDC3C7;
+$concrete     : #95A5A6;
+$asbestos     : #7F8C8D;
+
+// We use these as default colors throughout
+$primary-color: $peter-river;
+$secondary-color: $silver;
+$alert-color: $pomegranate;
+$success-color: $emerald;
+$warning-color: $pumpkin;
+$info-color: $sun-flower;
+
+// We use these to control various global styles
+// $body-bg: #2C3E50;
+// $body-font-color: $jet;
+
+$topbar-bg-color: $midnight-blue;
+$topbar-bg: $topbar-bg-color;
+$topbar-dropdown-bg: $wet-asphalt;
+$topbar-divider-border-bottom: solid 3px  scale-color($topbar-bg-color, $lightness: 13%);
+$topbar-link-bg-active: $belize-hole;
+$topbar-link-bg-active-hover: scale-color($topbar-link-bg-active, $lightness: -14%);
+$topbar-link-bg-hover: scale-color($topbar-dropdown-bg, $lightness: -14%);
+$topbar-menu-link-color-toggled: scale-color($concrete,$lightness: 15%);
+$topbar-menu-icon-color-toggled: scale-color($concrete,$lightness: 15%);

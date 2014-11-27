@@ -1,23 +1,23 @@
 ---
 layout: default
 ---
-
-<div class="small-12 medium-12 large-8 columns">
-
-  <h1 class="page-title">{{ page.title }}</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<ul class="no-bullet">
+  {% for post in site.posts %}
+    <li class="small-12 medium-12 large-12 post">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <p class="inline-bl"><i class="fa fa-tag"></i>
+        <ul class="inline-bl">
+          {% for category in post.categories %}
+            <li class="inline-bl">
+              <span class="label">{{ category }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </p>
+        <div class="post-content">{{ post.content }}</div>
+    </li>
+  {% endfor %}
+</ul>

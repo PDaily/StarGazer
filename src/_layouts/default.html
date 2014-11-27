@@ -6,23 +6,23 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="body">
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="row main full-width">
+      <div class="small-12 medium-12 large-9 content columns">
         {{ content }}
+      </div>
+
+      <div class="small-12 medium-12 large-3 aside columns">
+        {% include asides/github.html %}
       </div>
     </div>
 
     {% include footer.html %}
     {% javascript vendor %}
-    <script>
-      $(document).ready(function(){
-        $(document).foundation();
-      });
-    </script>
+    {% include scripts/document_ready.html %}
   </body>
-  
+
 </html>

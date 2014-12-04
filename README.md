@@ -17,7 +17,7 @@ Stargazer includes:
 I was originally using [Octopress], but decided to work from scratch. I do think however, I may pull some things from [Octopress] to make my life easier.
 
 ###Version
-0.0.3
+0.0.4
 
 ### Installation
 
@@ -28,12 +28,17 @@ I was originally using [Octopress], but decided to work from scratch. I do think
 $ git clone https://github.com/PDaily/StarGazer.git stargazer
 $ cd stargazer
 $ bundle install
-$ rake preview
 ```
+
+`$ rake preview` for Sinatra
+
+OR
+
+`$ rake run` for Unicorn (1 worker)
 
 ### Plugins
 
-As StarGazer is Jekyll at its core, any plugins developed for Jekyll should work out of the box. Plugins are located in the `plugins` directory.
+As StarGazer is Jekyll at its core, any plugins developed for Jekyll should work out of the box. Plugins are located in the `plugins` directory. I have started to add more plugins from [Octopress] as they are a great starting point for what I want out of this project.
 
 ### Development
 
@@ -67,9 +72,7 @@ $ rake test
 ```
 ### Todo's
 
- - Write Tests
- - Design more partials
- - Incorporate more Foundation goodness
+ See [issues].
 
 -------
 #Contributing
@@ -90,3 +93,4 @@ MIT
 [Bower]:http://bower.io
 [Jekyll-Assets]:https://github.com/ixti/jekyll-assets
 [html-proofer]:https://github.com/gjtorikian/html-proofer
+[issues]:https://github.com/PDaily/StarGazer/issues

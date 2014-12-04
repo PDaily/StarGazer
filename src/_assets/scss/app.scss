@@ -10,8 +10,11 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-// Include main index
-@import "index";
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+// Libraries
+@import "lib/waves";
 // Includes & Layouts
-@import "includes/includes";
 @import "layouts/layouts";
+@import "includes/includes";

@@ -15,8 +15,12 @@
         {{ content }}
       </div>
 
-      <div class="small-12 medium-12 large-3 aside columns">
-        {% include asides/github.html %}
+      <div class="small-12 medium-12 large-3 aside columns end">
+        {% if site.blog_index_asides.size %}
+          {% include_array blog_index_asides %}
+        {% else %}
+          {% include_array default_asides %}
+        {% endif %}
       </div>
     </div>
 
@@ -24,5 +28,5 @@
     {% javascript vendor %}
     {% include scripts/document_ready.html %}
   </body>
-
+    {% include after_footer.html  %}
 </html>

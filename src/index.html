@@ -8,16 +8,15 @@ layout: default
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
-      <p class="inline-bl"><i class="fa fa-tag"></i>
-        <ul class="inline-bl">
+        <i class="fa fa-tag waves-effect waves-circle"></i>
+        <ul class="inline-bl tag-container">
           {% for category in post.categories %}
             <li class="inline-bl">
-              <span class="label">{{ category }}</span>
+              <span class="waves-effect waves-light label">{{ category }}</span>
             </li>
           {% endfor %}
         </ul>
-      </p>
-        <div class="post-content">{{ post.content }}</div>
+        <div class="post-content text-justify">{{ post.content }}</div>
     </li>
   {% endfor %}
 </ul>

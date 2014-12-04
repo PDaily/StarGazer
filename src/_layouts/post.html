@@ -6,19 +6,25 @@ layout: default
   <header class="post-header">
     <h2 class="post-title">{{ page.title }}</h2>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    <p class="inline-bl"><i class="fa fa-tag"></i>
-      <ul class="inline-bl">
-        {% for category in page.categories %}
-        <li class="inline-bl">
-          <span class="label">{{ category }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-    </p>
+    <div class="tags">
+      <i class="fa fa-tag inline-bl"></i>
+        <ul class="inline-bl" id="tag">
+          {% for category in page.categories %}
+          <li class="inline-bl">
+            <span class="label">{{ category }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+    </div>
   </header>
 
   <div class="post-content">
     {{ content }}
   </div>
-
+  {% if site.disqus_short_name and page.comments == true %}
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+  </section>
+  {% endif %}
 </div>

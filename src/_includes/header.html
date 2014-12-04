@@ -5,17 +5,19 @@
 
         <ul class="title-area">
             <li class="name">
-              <h1><a href="{{ root_url }}/"><i class="fa fa-moon-o"></i> {{ site.title }}</a></h1>
+              <h1><a href="{{ root_url }}/" class="title-button waves-effect waves-light waves-button"><i class="fa fa-moon-o"></i> {{ site.title }}</a></h1>
             </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            <li class="menu toggle-topbar menu-icon waves-effect waves-light waves-block"><a href="#"><span>Menu</span></a></li>
         </ul>
 
 
         <section class="top-bar-section">
           <ul class="main-navigation right">
-              <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="{{ root_url }}/">Home</a></li>
-              <li{% if page.url == 'about' %} class="active"{% endif %}><a href="{{ root_url }}/about">About</a></li>
-              <li{% if page.url == 'contact' %} class="active"{% endif %}><a href="{{ root_url }}/contact">Contact</a></li>
+              <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="{{ root_url }}/" class="waves-effect waves-light waves-button">Home</a></li>
+              <li class="divider"></li>
+              <li{% if page.url == '/about/index.html' %} class="active"{% endif %}><a href="{{ root_url }}/about" class="waves-effect waves-light waves-button">About</a></li>
+              <li class="divider"></li>
+              <li{% if page.url == '/contact/index.html' %} class="active"{% endif %}><a href="{{ root_url }}/contact" class="waves-effect waves-light waves-button">Contact</a></li>
           </ul>
         </section>
       </nav>

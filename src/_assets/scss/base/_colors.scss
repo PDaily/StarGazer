@@ -57,7 +57,7 @@ $info-color: $sun-flower;
 $topbar-bg-color: $midnight-blue;
 $topbar-bg: $topbar-bg-color;
 $topbar-dropdown-bg: $wet-asphalt;
-$topbar-divider-border-bottom: solid 3px  scale-color($topbar-bg-color, $lightness: 13%);
+$topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);
 $topbar-link-bg-active: $belize-hole;
 $topbar-link-bg-active-hover: scale-color($topbar-link-bg-active, $lightness: -14%);
 $topbar-link-bg-hover: scale-color($topbar-dropdown-bg, $lightness: -14%);

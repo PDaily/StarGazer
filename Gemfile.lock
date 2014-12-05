@@ -163,11 +163,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
   compass (~> 1.0.1)
-=======
-  compass (~> 1.0)
->>>>>>> Merge branch 'master' into heroku
   font-awesome-sass
   foreman
   haml (~> 4.0.5)

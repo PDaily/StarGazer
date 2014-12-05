@@ -9,7 +9,7 @@ subtitle: blub.
 author: bloop.
 email: pat@pdaily.me
 description:
-url: "stargazer.pdaily.me" # the base hostname & protocol for your site
+url: # the base hostname & protocol for your site
 twitter_username:
 
 # Github stuffs
@@ -28,7 +28,7 @@ googleplus_user:
 googleplus_hidden: false
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: pdaily
 disqus_show_comment_count: false
 
 # Google Analytics

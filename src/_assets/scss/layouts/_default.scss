@@ -1,14 +1,10 @@
-.full-width {
-  max-width: 1150px;
-}
-
 .body {
   background-image: url(asset_path('noise-pink.png'));
 }
 
 .main {
   background-image: url(asset_path('noise-grey.png'));
-  padding: 1.5rem 1rem 1rem 0.2rem;
+  padding: 1.5rem 0rem 1rem 0.2rem;
   -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);

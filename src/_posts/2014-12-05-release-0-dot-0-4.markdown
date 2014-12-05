@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Release 0.0.4"
+date: 2014-12-05 00:47:01 +0000
+comments: true
+categories: news
+---
+
+Hello! Release 0.0.4 is here, along with it brings new styling and bugfixes.
+Assets have been orgnized in a slightly better manner, while bringing in some easy asides and goodies from [Octopress].
+
+Documentation is being worked on and can be located [here]!
+
+
+Thats all for now, off to more improvements and building the docs!
+
+[octopress]:http://octopress.org
+[here]:/docs

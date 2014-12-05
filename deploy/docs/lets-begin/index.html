@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>contact | StarGazer</title>
+    <title>Lets Begin | StarGazer</title>
     <meta name="author" content="bloop.">
 
     <meta name="description" content="">
@@ -21,7 +21,7 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <link rel="canonical" href="/contact/">
+    <link rel="canonical" href="/docs/lets-begin/">
     <link href="/favicon.png" rel="icon">
     <link href="" rel="alternate" title="StarGazer" type="application/atom+xml">
     <link rel="stylesheet" href="/assets/app-759ad2baa89b851211f111ba6c3b9a22.css">  
@@ -53,7 +53,7 @@
               <li class="divider"></li
               <li><a href="/about" class="waves-effect waves-light waves-button">About</a></li>
               <li class="divider"></li>
-              <li class="active"><a href="/contact" class="waves-effect waves-light waves-button">Contact</a></li>
+              <li><a href="/contact" class="waves-effect waves-light waves-button">Contact</a></li>
           </ul>
         </section>
       </nav>
@@ -66,20 +66,44 @@
       <div class="small-12 medium-12 large-12 content columns">
         <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">contact</h1>
-  </header>
-
   <article class="post-content">
-    
+    <h3 id="lets-begin">Lets Begin!</h3>
+
+<p>As this is a Jekyll based project, you DO need to be familiar with shell commands and git. As such, there are a few things you need to have ready on your system.</p>
+
+<p>You will need:</p>
+
+<ul>
+  <li>Git</li>
+  <li>Ruby (Preferably 2.0 or higher)</li>
+</ul>
+
+<h4 id="setup-stargazer">Setup StarGazer</h4>
+
+<p>Lets go ahead and download the source files:</p>
+
+<p><code>
+$ git clone git@github.com:PDaily/stargazer.git stargazer
+$ cd stargazer
+</code></p>
+
+<p>Once we are in our working directory, install required dependancies:</p>
+
+<p><code>
+$ gem install bundler
+$ bundle install
+</code></p>
+
+<h4 id="next-steps">Next Steps</h4>
+
+<ul>
+  <li><a href="/docs/config/index.html">Configuration</a></li>
+  <li><a href="/docs/deploy/index.html">Deployment</a></li>
+  <li><a href="/docs/blogging/index.html">Blogging</a></li>
+</ul>
+
 
   </article>
-
-  
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
-  </section>
 
 </div>
 
@@ -146,22 +170,6 @@ $(document).ready(function(){
 
   </body>
     
-
-<script type="text/javascript">
-      var disqus_shortname = 'pdaily';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = '/contact/index.html';
-        var disqus_url = '/contact/index.html';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 </html>

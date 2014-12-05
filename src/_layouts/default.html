@@ -11,17 +11,10 @@
     {% include header.html %}
 
     <div class="row main full-width">
-      <div class="small-12 medium-12 large-9 content columns">
+      <div class="small-12 medium-12 large-12 content columns">
         {{ content }}
       </div>
 
-      <div class="small-12 medium-12 large-3 aside columns end">
-        {% if site.blog_index_asides.size %}
-          {% include_array blog_index_asides %}
-        {% else %}
-          {% include_array default_asides %}
-        {% endif %}
-      </div>
     </div>
 
     {% include footer.html %}

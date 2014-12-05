@@ -9,8 +9,9 @@ subtitle: blub.
 author: bloop.
 email: pat@pdaily.me
 description:
-url: # the base hostname & protocol for your site
-twitter_username:
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "stargazer.pdaily.me" # the base hostname & protocol for your site
+twitter_user:
 
 # Github stuffs
 github_user: 
